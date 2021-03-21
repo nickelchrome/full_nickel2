@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
           this_form.find('.loading').slideUp();
           this_form.find('.sent-message').slideDown();
           this_form.find("input:not(input[type=submit]), textarea").val('');
-        } else {
+        } else {/*
           function sleepFor(sleepDuration) {
             var now = new Date().getTime();
             while (new Date().getTime()<now + sleepDuration){
@@ -124,10 +124,13 @@ jQuery(document).ready(function($) {
           function loginForForm (){
             sleepFor(4000);
             this_form.find('.loading').slideUp();
-          }
-          loginForForm();
+          }*/
+
           this_form.find('.sent-message').slideDown();
+
           this_form.find("input:not(input[type=submit]), textarea").val('');
+
+          this_form.find('.loading').slideUp();
         }
       }
     });
