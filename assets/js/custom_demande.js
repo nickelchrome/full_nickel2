@@ -1,7 +1,7 @@
 
 
 document.getElementById("form_demande").addEventListener("submit", function (e) {
-    e.preventDefault();
+    
     let name = $("#dnom").val();
     let email = $("#dmail").val();
     let pays = $("#dpays").val();
@@ -49,7 +49,7 @@ document.getElementById("form_demande").addEventListener("submit", function (e) 
     }).then(
 
     );
-
+e.preventDefault();
 
 });
 
